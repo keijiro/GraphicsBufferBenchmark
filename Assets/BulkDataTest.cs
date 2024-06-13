@@ -27,7 +27,11 @@ public class BulkDataTest : MonoBehaviour
 
     void Update()
     {
+        var sw = new System.Diagnostics.Stopwatch();
+        sw.Start();
         if (_doGetData) foreach (var buffer in _buffers) buffer.GetData(_data);
         if (_doSetData) foreach (var buffer in _buffers) buffer.SetData(_data);
+        sw.Stop();
+        Debug.Log($"{sw.Elapsed.TotalMilliseconds} ms");
     }
 }
