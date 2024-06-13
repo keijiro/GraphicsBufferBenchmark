@@ -147,10 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f2a4775207559429ecfd4642058415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bufferCount: 32
-  _bufferSize: 2073600
-  _doGetData: 1
-  _doSetData: 1
+  BufferCount: 64
+  BufferSize: 2073600
+  Accessor: 0
 --- !u!4 &1255618626
 Transform:
   m_ObjectHideFlags: 0
